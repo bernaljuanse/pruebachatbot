@@ -19,7 +19,7 @@ app.use(userLoggedMiddleware);
 app.use(express.urlencoded({ extended: false }));
 
 app.use(express.static('./public'));
-app.listen(3001, () => console.log('Servidor levantado en el puerto 3001'));
+app.listen(80, () => console.log('Servidor levantado en el puerto 80'));
 
 // Template Engine
 app.set('view engine', 'ejs');
